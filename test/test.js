@@ -3,7 +3,7 @@ const { Calculator } = require('../public/javascripts/Calculator');
 
 describe('Calculator', () => {
   let calc;
-  beforeEach(function () {
+  beforeEach(function funky() {
     calc = new Calculator();
     this.retries(2);
   });
