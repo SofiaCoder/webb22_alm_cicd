@@ -1,0 +1,13 @@
+name: fake main branch action 
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  fake-main-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: echo main branch
+        run: "echo now deploying to production"
