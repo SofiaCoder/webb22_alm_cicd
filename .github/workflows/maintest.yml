@@ -1,11 +1,11 @@
-name: main action
+name: main test
 on:
   push:
     branches:
     - main
 
 jobs:
-  mocha:
+  mocha-supertest:
     runs-on: ubuntu-latest
     
     steps:
@@ -15,5 +15,5 @@ jobs:
       - name: Install dependencies
         run: npm install
         
-      - name: Mocha test
+      - name: Mocha and supertest
         run: npm run test
