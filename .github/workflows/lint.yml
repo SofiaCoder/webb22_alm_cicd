@@ -5,12 +5,17 @@ on:
     - main
 
 jobs:
-  run-eslint:
+  eslint:
     runs-on: ubuntu-latest
+
     steps:
-      - name: install dependencies
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
         run: npm install
-      - name: check linting error
+
+      - name: Run ESLint
         run: npm run eslint
         
       
