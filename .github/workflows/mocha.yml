@@ -1,0 +1,13 @@
+name: main action
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  mocha:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Mocha test
+        run: npm run test
