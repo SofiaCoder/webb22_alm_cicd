@@ -8,8 +8,10 @@ jobs:
   run-eslint:
     runs-on: ubuntu-latest
     steps:
+      - name: install dependencies
+        run: npm install
       - name: check linting error
-        run: "npm run eslint"
+        run: npm run eslint
         
       
   
