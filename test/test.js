@@ -1,7 +1,7 @@
 const assert = require('assert');
 const { Calculator } = require('../public/javascripts/Calculator');
 
-describe('Calculator', () => {
+describe('Calculator', function () {
   let calc;
   beforeEach(function funky() {
     calc = new Calculator();
