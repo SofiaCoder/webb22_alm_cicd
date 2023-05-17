@@ -4,7 +4,7 @@ const { Calculator } = require('../public/javascripts/Calculator');
 const router = express.Router();
 const calc = new Calculator();
 
-router.get('/:param1&:param2', (req, res, next) => {
+router.get('/s:param1&:param2', (req, res, next) => {
   const { param1, param2 } = req.params;
 
   calc.add(Number(param1));
