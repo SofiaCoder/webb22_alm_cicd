@@ -1,1 +1,1 @@
-FROM node:alpine-latest
+FROM nginx:alpine
